@@ -1,4 +1,4 @@
-# 寶水果 MY FRUITS — D197 貓山王榴槤 Landing Page
+# 賣水果 My Fruit — D197 貓山王榴槤 Landing Page
 
 黑金奢華風的榴槤預訂單頁。純靜態（HTML/CSS/JS），可直接放 GitHub Pages，
 訂單透過 Supabase JS client 直接寫入資料庫（無需後端伺服器），並有 WhatsApp 後備。

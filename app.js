@@ -1,5 +1,5 @@
 /* =========================================================
-   寶水果 MY FRUITS — 互動邏輯
+   賣水果 My Fruit — 互動邏輯
    ========================================================= */
 (function () {
   "use strict";
@@ -141,7 +141,7 @@
 
   function buildWaMessage(d) {
     return [
-      "【寶水果 · 榴槤預訂】",
+      "【賣水果 · 榴槤預訂】",
       `姓名：${d.customer_name}`,
       `電話：${d.phone}`,
       `商品：${d.product}（${d.purchase_unit}）×${d.quantity}`,
