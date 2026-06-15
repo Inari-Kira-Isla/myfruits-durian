@@ -10,6 +10,18 @@
   /* ---------- 年份 ---------- */
   const yr = $("#yr"); if (yr) yr.textContent = new Date().getFullYear();
 
+  /* ---------- 本期到貨日公告 ---------- */
+  if (CFG.arrivalLabel) {
+    const heroShip = $("#heroShip");
+    if (heroShip) { heroShip.textContent = "📦 本期到貨：" + CFG.arrivalLabel + "・現正接受預訂"; heroShip.hidden = false; }
+    const shipNote = $("#shipNote");
+    if (shipNote) { shipNote.textContent = "📦 本期到貨日：" + CFG.arrivalLabel + "（飛機抵澳後安排自取／送貨）"; shipNote.hidden = false; }
+  }
+  if (CFG.arrivalDate) {
+    const dt = $("#f_date");
+    if (dt) { dt.min = CFG.arrivalDate; dt.value = CFG.arrivalDate; }
+  }
+
   /* ---------- nav scrolled 狀態 ---------- */
   const nav = $("#nav");
   const onScroll = () => nav && nav.classList.toggle("scrolled", window.scrollY > 40);

@@ -13,6 +13,11 @@ window.SITE_CONFIG = {
   priceUnit: "磅",                       // 按磅計價
   boxNote: "整箱約 12kg（約 26 磅）",      // 一箱規格說明
 
+  /* ---- 本期到貨日（改期只改呢度）----
+     arrivalLabel = 畀客睇嘅文字；arrivalDate = 表單日期最早可揀（YYYY-MM-DD） */
+  arrivalLabel: "下週二（6 月 23 日）",
+  arrivalDate: "2026-06-23",
+
   /* ---- Supabase 訂單入庫 ---- */
   supabaseUrl:     "https://jytzgrstqtemoolrflrm.supabase.co",
   supabaseAnonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp5dHpncnN0cXRlbW9vbHJmbHJtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE1MTcyNDAsImV4cCI6MjA5NzA5MzI0MH0.9NyOtXbc5a9NxjMdG_bEKc-caHWl208PiKvNwsIWtYE",
