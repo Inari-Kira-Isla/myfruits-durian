@@ -77,7 +77,9 @@
       card.innerHTML = `
         <div class="prod__media">
           <span class="prod__badge ${p.hot ? "prod__badge--hot" : ""}">${p.tier || "頂級貓山王"}</span>
-          ${durianIcon}
+          ${p.image
+            ? `<img class="prod__img" src="${p.image}" alt="${p.name}" loading="lazy" />`
+            : durianIcon}
         </div>
         <div class="prod__body">
           <div class="prod__grade">${p.grade || ""}</div>
